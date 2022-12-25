@@ -1,0 +1,38 @@
+
+<div class="container  min-vh-100 d-flex justify-content-center align-items-center">
+    <div class="row  " >
+        
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
+            <div class="row g-3 mt-3 ">
+                <div class="card mb-3 bg-dark text-white " >
+                    <div class="row g-0 ">
+                        
+                      <div class="col-md-4 ">
+                        <img src="https://schoolknot.com/website/img/bg-img/default-2.png" class="img-fluid rounded-start" alt="admin login image">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Admin Login</h5>
+                          
+                          <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col xl-12 col-xxl-12">
+                            <label for="" class="form-label">Username</label>
+                            <input name="username" [(ngModel)]="username" type="text" class="form-control">
+                          </div>
+                        
+                          <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col xl-12 col-xxl-12">
+                            <label for="" class="form-label">Password</label>
+                            <input name="password" [(ngModel)]="password" type="password" class="form-control">
+                          </div>
+                          <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col xl-12 col-xxl-12 text-center mt-3">
+                            <button (click)="readValue()" class="btn btn-success">Login</button><br>
+                            <a href="/empLogin" class="text-light">user signIn</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
