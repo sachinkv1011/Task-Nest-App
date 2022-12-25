@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmpLoginComponent } from './emp-login/emp-login.component';
 import { AdminNavComponent } from './admin-nav/admin-nav.component';
 import { EmpNavComponent } from './emp-nav/emp-nav.component';
+import { MyProfileComponent } from './my-profile/my-profile.component';
 
 const myRoute:Routes=[
   {
@@ -21,6 +22,9 @@ const myRoute:Routes=[
   },
   {
     path:"empLogin",component:EmpLoginComponent
+  },
+  {
+    path:"myProfile",component:MyProfileComponent
   }
 ]
 @NgModule({
@@ -30,7 +34,8 @@ const myRoute:Routes=[
     AddEmployeeComponent,
     EmpLoginComponent,
     AdminNavComponent,
-    EmpNavComponent
+    EmpNavComponent,
+    MyProfileComponent
   ],
   imports: [
     BrowserModule,
