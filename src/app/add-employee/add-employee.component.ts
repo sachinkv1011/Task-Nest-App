@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiServiceService } from '../api-service.service';
 
 @Component({
   selector: 'app-add-employee',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AddEmployeeComponent {
 
-  constructor(){}
+  constructor(private api:ApiServiceService){}
 
   empCode=""
   empName=""
@@ -31,6 +32,26 @@ export class AddEmployeeComponent {
 
     }
     console.log(data)
+    this.api.addEmployee(data).subscribe(
+      (response:any)=>{
+        console.log(response)
+        if (response.status=="success") {
+          alert("Exployee added successfully!")
+          this.empCode=""
+          this.empName=""
+          this.empEmail=""
+          this.empPhone=""
+          this.designation=""
+          this.empSalary=""
+          this.username=""
+          this.password=""
+          
+        } else {
+          alert("öops! something went wrong")
+          
+        }
+      }
+    )
   }
 
 }
