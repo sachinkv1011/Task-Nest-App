@@ -14,4 +14,7 @@ export class ApiServiceService {
   empLogin=(data:any)=>{
     return this.http.post("http://localhost:8080/emplogin",data)
   }
+  viewMyProfile=(data:any)=>{
+    return this.http.post("http://localhost:8080/viewMyProfile",data)
+  }
 }

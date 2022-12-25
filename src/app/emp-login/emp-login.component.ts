@@ -25,7 +25,7 @@ export class EmpLoginComponent {
           localStorage.setItem("userInfo",response.userId)
           alert("Access Granted..")
 
-          this.route.navigate(['/viewMyProfile'])
+          this.route.navigate(['/myProfile'])
           
         } else {
           alert("oops! something went wrong...")
