@@ -1,0 +1,65 @@
+<app-admin-nav></app-admin-nav>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-3">
+                <div class="card bg-secondary" >
+                    <div class="card-body">
+                      <h5 class="card-title">Search Employee</h5>
+                      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label text-dark">Employee Name</label>
+                        <input type="text" class="form-control" name="empName" [(ngModel)]="empName">
+                      </div>
+                      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 my-3">
+                        <button (click)="readValue()" class="btn btn-success text-dark">Search</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+            </div>
+            <div class="row g-3 mt-3" *ngFor="let i of result">
+                
+                        <h1 class="card-title text-center">Employee Details</h1>
+                      
+                        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <label for="" class="form-label">Employee Code</label>
+                            <input type="text" name="empCode"  class="form-control" value="{{i.empCode}}">
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <label for="" class="form-label">Name</label>
+                            <input type="text" name="empName" class="form-control" value="{{i.empName}}">
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <label for="" class="form-label">Employee Email</label>
+                            <input type="email" name="empEmail"  class="form-control" value="{{i.empEmail}}">
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <label for="" class="form-label">Phone</label>
+                            <input type="text" name="empPhone" class="form-control" value="{{i.empPhone}}">
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <label for="" class="form-label">Designation</label>
+                            <input name="designation"  type="text" class="form-control" value="{{i.designation}}">
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <label for="" class="form-label">Salary</label>
+                            <input type="text" name="empSalary"  class="form-control" value="{{i.empSalary}}">
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <label for="" class="form-label">Username</label>
+                            <input type="text" name="username"  class="form-control" value="{{i.username}}">
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center mb-3">
+                            <button (click)="deleteBtnClick(i.id)" class="btn btn-danger">Terminate Employee</button>
+                        </div>
+                    
+                </div>
+                
+
+                
+            </div>
+
+
+        </div>
+    </div>
+
