@@ -15,6 +15,7 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
 import { SearchEmpComponent } from './search-emp/search-emp.component';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { ViewAllTaskComponent } from './view-all-task/view-all-task.component';
+import { MyTaskComponent } from './my-task/my-task.component';
 
 const myRoute:Routes=[
   {
@@ -37,6 +38,9 @@ const myRoute:Routes=[
   },
   {
     path:"viewAllTask",component:ViewAllTaskComponent
+  },
+  {
+    path:"myTask",component:MyTaskComponent 
   }
 ]
 @NgModule({
@@ -50,7 +54,8 @@ const myRoute:Routes=[
     MyProfileComponent,
     SearchEmpComponent,
     AddTaskComponent,
-    ViewAllTaskComponent
+    ViewAllTaskComponent,
+    MyTaskComponent
   ],
   imports: [
     BrowserModule,
