@@ -17,6 +17,8 @@ export class MyProfileComponent {
       (response:any)=>{
         this.data=response
         console.log(this.data)
+        localStorage.setItem("new",this.data[0].empCode)
+       
       }
     )
   }

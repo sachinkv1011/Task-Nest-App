@@ -23,6 +23,7 @@ export class EmpLoginComponent {
         console.log(response)
         if (response.status=="success") {
           localStorage.setItem("userInfo",response.userId)
+          localStorage.setItem("userCode1",response.userCode)
           alert("Access Granted..")
 
           this.route.navigate(['/myProfile'])

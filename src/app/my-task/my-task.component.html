@@ -1,0 +1,42 @@
+<app-emp-nav></app-emp-nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-xl-12 col-xxl-12">
+
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Task Title</th>
+                    <th scope="col">Task Assign Date</th>
+                    <th scope="col">Task DueDate</th>
+                    <th scope="col">Remarks</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Update Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of data1">
+                    <td>{{i.taskTitle}}</td>
+                    <td>{{i.assignDate}}</td>
+                    <td>{{i.taskDueDate}}</td>
+                    <td>{{i.remarks}}</td>
+                    <td>{{i.status}}</td>
+                    <td><div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Select
+                        </button>
+                        <ul class="dropdown-menu" >
+                          <li><a class="dropdown-item" (click)="function1()">Completed</a></li>
+                          <li><a class="dropdown-item" (click)="function2()">Processing</a></li>
+                          <li><a class="dropdown-item" (click)="function3()">I can't</a></li>
+                        </ul>
+                      </div></td>
+                  </tr>
+                  
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

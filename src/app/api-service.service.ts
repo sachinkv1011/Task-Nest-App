@@ -29,4 +29,10 @@ export class ApiServiceService {
   viewAllTask=()=>{
     return this.http.get("http://localhost:8080/viewAllTask")
   }
+  viewMyTask=(data:any)=>{
+    return this.http.post("http://localhost:8080/viewMyTask",data)
+  }
+  updateStatus=(data:any)=>{
+    return this.http.post("http://localhost:8080/updateTaskStatus",data)
+  }
 }
