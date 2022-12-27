@@ -1,0 +1,35 @@
+<app-admin-nav></app-admin-nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-xl-12 col-xxl-12">
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Employee Code</th>
+                    <th scope="col">Task Title</th>
+                    <th scope="col">Task Assign Date</th>
+                    <th scope="col">Task DueDate</th>
+                    <th scope="col">Remarks</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of task">
+                    <th scope="row">{{i.emp_name}}</th>
+                    <td>{{i.emp_id}}</td>
+                    <td>{{i.task_title}}</td>
+                    <td>{{i.assign_date}}</td>
+                    <td>{{i.task_due_date}}</td>
+                    <td>{{i.remarks}}</td>
+                    <td>{{i.status}}</td>
+                  </tr>
+                  
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
