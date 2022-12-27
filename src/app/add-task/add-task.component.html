@@ -1,0 +1,36 @@
+<app-admin-nav></app-admin-nav>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-3">
+               
+                <h1 class="text-center">Add Task</h1>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Employee Code</label>
+                    <input type="text" name="empId" [(ngModel)]="empId" class="form-control" >
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Task Title</label>
+                    <input type="text" name="taskTitle" [(ngModel)]="taskTitle" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Task Due Date</label>
+                    <input type="date" name="taskDueDate" [(ngModel)]="taskDueDate" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Remarks</label>
+                    <input type="text" name="remarks" [(ngModel)]="remarks" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Status</label>
+                    <input name="status" [(ngModel)]="status" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValue()" class="btn btn-success">Add</button>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</div>

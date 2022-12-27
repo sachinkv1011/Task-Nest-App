@@ -23,4 +23,10 @@ export class ApiServiceService {
   deleteEmployee=(data:any)=>{
     return this.http.post("http://localhost:8080/deleteEmployee",data)
   }
+  addTask=(data:any)=>{
+    return this.http.post("http://localhost:8080/addTask",data)
+  }
+  viewAllTask=()=>{
+    return this.http.get("http://localhost:8080/viewAllTask")
+  }
 }

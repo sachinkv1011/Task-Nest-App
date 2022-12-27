@@ -13,6 +13,7 @@ import { AdminNavComponent } from './admin-nav/admin-nav.component';
 import { EmpNavComponent } from './emp-nav/emp-nav.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { SearchEmpComponent } from './search-emp/search-emp.component';
+import { AddTaskComponent } from './add-task/add-task.component';
 
 const myRoute:Routes=[
   {
@@ -29,6 +30,9 @@ const myRoute:Routes=[
   },
   {
     path:"searchEmp",component:SearchEmpComponent
+  },
+  {
+    path:"addTask",component:AddTaskComponent
   }
 ]
 @NgModule({
@@ -40,7 +44,8 @@ const myRoute:Routes=[
     AdminNavComponent,
     EmpNavComponent,
     MyProfileComponent,
-    SearchEmpComponent
+    SearchEmpComponent,
+    AddTaskComponent
   ],
   imports: [
     BrowserModule,
